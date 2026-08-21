@@ -6,5 +6,7 @@ This repository contains my technical notes, commands, and logic while solving l
 
 ### **Level 20 - 21**
 **OBJECTIVE:-**  Make a connection with the setuid binary through any localhost port and pass the password of the current level
-**KEY COMMAND:-** `echo "password" | nc -l -p <port> &` 
+
+**KEY COMMAND:-** `echo "password" | nc -l -p <port> &`
+ 
 **Concept:-** Create a backgroud listening port using Netcat (`nc -l`) followed by (`&`) which makes it run in the background and then just pass the port to the setuid binary using (`./suconnect <post>`) so that it could establish the connection and verify the password.
