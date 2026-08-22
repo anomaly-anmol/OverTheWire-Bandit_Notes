@@ -16,4 +16,4 @@ This repository contains my technical notes, commands, and logic while solving l
 
 **KEY COMMAND:-** `cd /etc/cron.d/cronjob_bandit22`
  
-**Concept:-** Inspecte a cronjob structure (`cat /etc/cronjob.d`) to find an automatically generating shell script (`/usr/bin/cronjob_bandit22.sh`) that is redirecting the password to another directory (`/tmp...`) and then concatenate the file to get the password. 
+**Concept:-** Inspecte a cronjob structure (`cat /etc/cronjob.d`) to find an automatically generating shell script (`/usr/bin/cronjob_bandit22.sh`) that is redirecting the password to another directory (`/tmp...`) and then concatenate the file to get the next password. 
