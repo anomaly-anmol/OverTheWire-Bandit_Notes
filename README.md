@@ -24,3 +24,10 @@ This repository contains my technical notes, commands, and logic while solving l
 **KEY COMMAND:-** `echo "I am user bandit23" | md5sum | cut -d ' ' -f 1`
  
 **CONCEPT:-** `/usr/bin/cronjob_bandit23.sh` hides its output file in `/tmp...` using an MD5 hashing, concatenate the script and read it manually, then predict the output file name and get the password.
+
+## **Level 23 - 24**
+**OBJECTIVE:-**  Pass a script to /var/spool/bandit24/foo/ which will be executed by a cronjon to get the password file.
+
+**KEY COMMAND:-** `echo "cp /etc/bandit_pass/bandit24 /tmp/myworkspace/pass.txt && chmod 777 /tmp/myworkspace/pass.txt" > pass24.sh`
+ 
+**CONCEPT:-** Extend privileges through automated code execution in user-writable cron spool directories.
