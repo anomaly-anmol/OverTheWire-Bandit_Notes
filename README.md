@@ -31,3 +31,10 @@ This repository contains my technical notes, commands, and logic while solving l
 **KEY COMMAND:-** `echo "cp /etc/bandit_pass/bandit24 /tmp/myworkspace/pass.txt && chmod 777 /tmp/myworkspace/pass.txt" > pass24.sh`
  
 **CONCEPT:-** Extend privileges through automated code execution in user-writable cron spool directories.
+
+## **Level 24 - 25**
+**OBJECTIVE:-**  Brute force a pincode (0000-9999) on an open port listening on 30002 alongside this level's password.
+
+**KEY COMMAND:-** `for i in {0000..9999}; do echo "$(cat /etc/bandit_pass/bandit24) $i"; done > /tmp/myworkspace/work.txt` followed by `cat /tmp/mybandit_24/work.txt | nc -q 2 localhost 30002 | grep -v "Wrong"`
+ 
+ **CONCEPT:-** Generate all 10000 pincode combinations alongside this level's password, pipe them into the localhost port using `nc` and then filter the failed ones using `grep` to get the password.
