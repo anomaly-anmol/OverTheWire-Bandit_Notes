@@ -44,4 +44,4 @@ This repository contains my technical notes, commands, and logic while solving l
 
 **KEY COMMAND:-** `scp -P 2220 bandit25@bandit.labs.overthewire.org:/home/bandit25/bandit26.sshkey ./bandit26.key`
  
- **CONCEPT:-** Leveraged TTY window geometry constraints (`SIGWINCH`) to trap the more pager inside `/usr/bin/showtext`, then exploited `vim`'s shell configuration settings to escape the restricted environment into a fully functional local shell.
+ **CONCEPT:-** Leveraged TTY window geometry constraints (`SIGWINCH`) to trap the `more` pager inside `/usr/bin/showtext`, then exploited `vim`'s shell configuration settings to escape the restricted environment into a fully functional local shell.
