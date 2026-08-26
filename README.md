@@ -38,3 +38,10 @@ This repository contains my technical notes, commands, and logic while solving l
 **KEY COMMAND:-** `for i in {0000..9999}; do echo "$(cat /etc/bandit_pass/bandit24) $i"; done > /tmp/myworkspace/work.txt` followed by `cat /tmp/mybandit_24/work.txt | nc -q 2 localhost 30002 | grep -v "Wrong"`
  
  **CONCEPT:-** Generate all 10000 pincode combinations alongside this level's password, pipe them into the localhost port using `nc` and then filter the failed ones using `grep` to get the password.
+
+ ## **Level 25 - 26**
+**OBJECTIVE:-**  Break out of a non-standard login shell (`/usr/bin/showtext`) executing `more` to spawn an interactive Bash shell as `bandit26`.
+
+**KEY COMMAND:-** `scp -P 2220 bandit25@bandit.labs.overthewire.org:/home/bandit25/bandit26.sshkey ./bandit26.key`
+ 
+ **CONCEPT:-** Leveraged TTY window geometry constraints (`SIGWINCH`) to trap the more pager inside `/usr/bin/showtext`, then exploited `vim`'s shell configuration settings to escape the restricted environment into a fully functional local shell.
