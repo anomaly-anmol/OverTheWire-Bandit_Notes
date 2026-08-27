@@ -47,7 +47,7 @@ This repository contains my technical notes, commands, and logic while solving l
  **CONCEPT:-** Leveraged TTY window geometry constraints (`SIGWINCH`) to trap the more pager inside `/usr/bin/showtext`, then exploited `vim`'s shell configuration settings to escape the restricted environment into a fully functional local shell.
 
 ## **Level 26 - 27**
-**OBJECTIVE:-**  Locate and execute a Set Owner User ID (SUID) binary with elevated privileges to read the Level 27 password file..
+**OBJECTIVE:-**  Locate and execute a Set Owner User ID (SUID) binary with elevated privileges to read the Level 27 password file.
 
 **KEY COMMAND:-** `./bandit27-do cat /etc/bandit_pass/bandit27`
  
