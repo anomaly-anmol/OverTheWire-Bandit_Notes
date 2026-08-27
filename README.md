@@ -52,3 +52,4 @@ This repository contains my technical notes, commands, and logic while solving l
 **KEY COMMAND:-** `./bandit27-do cat /etc/bandit_pass/bandit27`
  
  **CONCEPT:-** Exploited a binary owned by `bandit27`, allowing standard users to execute commands under `bandit27`'s context and gain privileged file access.
+
