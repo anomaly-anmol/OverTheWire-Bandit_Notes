@@ -59,3 +59,10 @@ This repository contains my technical notes, commands, and logic while solving l
 **KEY COMMAND:-** `git clone ssh://bandit27-git@bandit.labs.overthewire.org:2220/home/bandit27-git/repo`
  
  **CONCEPT:-** Utilized Git version control to clone a remote repository over an SSH transport layer using a specified non-standard port (`2220`), then inspected the tracked file tree to extract stored secrets..
+
+## **Level 28 -> 29**
+**OBJECTIVE:-** Investigate the repository's commit history to recover a password that was removed or redacted in the latest commit.
+
+**KEY COMMAND:-** `git log`
+ 
+ **CONCEPT:-** Demonstrated that Git tracks the full version history of a repository; overwriting or redacting sensitive data in the current working tree (`HEAD`) does not scrub it from prior commit logs or diffs.
