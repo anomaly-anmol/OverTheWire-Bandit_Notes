@@ -66,3 +66,10 @@ This repository contains my technical notes, commands, and logic while solving l
 **KEY COMMAND:-** `git log`
  
  **CONCEPT:-** Demonstrated that Git tracks the full version history of a repository; overwriting or redacting sensitive data in the current working tree (`HEAD`) does not scrub it from prior commit logs or diffs.
+
+## **Level 29 -> 30**
+**OBJECTIVE:-** Retrieve the password for Bandit 30 hidden inside a Git repository where the main branch README does not contain the password.
+
+**KEY COMMAND:-** `git branch -a` followed by `git checkout dev`.
+ 
+ **CONCEPT:-** Leveraged Git branch enumeration to discover sensitive information stored in secondary development branches that was censored or removed from the main production branch (`master`).
