@@ -73,3 +73,10 @@ This repository contains my technical notes, commands, and logic while solving l
 **KEY COMMAND:-** `git branch -a` followed by `git checkout dev`.
  
  **CONCEPT:-** Leveraged Git branch enumeration to discover sensitive information stored in secondary development branches that was censored or removed from the main production branch (`master`).
+
+## **Level 30 -> 31**
+**OBJECTIVE:-** Locate the hidden password for Bandit 31 inside a Git repository where the `master` branch `README.md` file contains a red-herring note ("just an epmty file... muahaha").
+
+**KEY COMMAND:-** `git tag`
+ 
+ **CONCEPT:-** Demonstrated Git tag inspection to extract sensitive credentials embedded within annotated Git tags/release bookmarks when commit logs and secondary branches contain no useful data.
