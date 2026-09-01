@@ -80,3 +80,10 @@ This repository contains my technical notes, commands, and logic while solving l
 **KEY COMMAND:-** `git tag`
  
  **CONCEPT:-** Demonstrated Git tag inspection to extract sensitive credentials embedded within annotated Git tags/release bookmarks when commit logs and secondary branches contain no useful data.
+
+## **Level 31 -> 32**
+**OBJECTIVE:-** Push a tracked file to a remote Git repository to bypass a dynamic server-side hook check and retrieve the password for Bandit 32.
+
+**KEY COMMAND:-** `git add key.txt -f`, `git commit -m "May I come in?"` followed by `git push origin master`.
+ 
+ **CONCEPT:-** Demonstrated working with Git remote hooks and tracked repositories by using the force flag (`-f`) to stage a file ignored by `.gitignore` and pushing it upstream to trigger automated credential generation.
